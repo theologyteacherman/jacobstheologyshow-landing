@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Jacobs Theology Show</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Jacobs Theology Show">
+  <meta property="og:description" content="Faith meets reason. Explore theology, philosophy, and Scripture with Mr. Jacobs and friends.">
+  <meta property="og:image" content="https://jacobstheologyshowpodcast.neocities.org/images/Banner%20Photo2.png">
+  <meta property="og:url" content="https://www.jacobstheologyshow.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Jacobs Theology Show">
+  <meta name="twitter:description" content="Faith meets reason. Explore theology, philosophy, and Scripture with Mr. Jacobs and friends.">
+  <meta name="twitter:image" content="https://jacobstheologyshowpodcast.neocities.org/images/Banner%20Photo2.png">
+
+  <link rel="icon" type="image/png" href="https://theologyteacherman.github.io/fullgamesite3/images/favicon.png">
+
+  <style>
+    :root {
+      --primary-colour: #e8436f;
+      --secondary-colour: #f4a5c3;
+      --light-bg: #fff7f2;
+      --dark-text: #3a3a3a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: var(--dark-text);
+      background: linear-gradient(180deg, #fff7f2 0%, #fde7e2 100%);
+      cursor: url('https://theologyteacherman.github.io/fullgamesite3/images/cat_cursor.png'), auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: var(--primary-colour);
+      color: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav .title {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .hero {
+      position: relative;
+      height: 60vh;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffffff;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://theologyteacherman.github.io/fullgamesite3/images/banner.png') center/cover no-repeat;
+      filter: brightness(0.7);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      max-width: 600px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--secondary-colour);
+      color: #ffffff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #c92e58;
+    }
+
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .section p {
+      margin-bottom: 1.5rem;
+    }
+
+    .about-text {
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
+
+    @media (min-width: 768px) {
+      .about-text {
+        font-size: 1.6rem;
+      }
+    }
+
+    footer {
+      background: var(--primary-colour);
+      color: #ffffff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .hero {
+        height: 40vh;
+        min-height: 200px;
+      }
+
+      .hero::before {
+        background-image: url('https://theologyteacherman.github.io/fullgamesite3/images/cat%20podcast.png');
+        background-position: center;
+        background-size: cover;
+      }
+
+      .hero h1 {
+        font-size: 1.5rem;
+        padding: 0 1rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+
+      .section {
+        padding: 1.5rem 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="title">The Jacobs Theology Show</div>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="https://theologyteacherman.github.io/fullgamesite3/listen.html">Listen</a></li>
+      <li><a href="https://theologyteacherman.github.io/fullgamesite3/episodes.html">Episodes</a></li>
+      <li><a href="https://theologyteacherman.github.io/fullgamesite3/tools.html">Tools</a></li>
+      <li><a href="https://theologyteacherman.github.io/fullgamesite3/games.html">Games</a></li>
+      <li><a href="https://theologyteacherman.github.io/fullgamesite3/music/">Music</a></li>
+      <li><a href="https://theologyteacherman.github.io/fullgamesite3/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Welcome to The Jacobs Theology Show</h1>
+      <p>Dive deep into theology, philosophy, and the Bible with Mr.&nbsp;Jacobs and friends. Explore the big questions of faith in a fun and engaging way.</p>
+      <a href="https://theologyteacherman.github.io/fullgamesite3/listen.html" class="btn">Start Listening</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>About the Show</h2>
+    <p class="about-text">The Jacobs Theology Show is a podcast where faith meets reason. Hosted by Brandon, Alice, and the Biblical Catective, it unpacks theology in a way that's fun, smart, and down‑to‑earth.</p>
+  </section>
+
+  <footer>
+    <p>Biblical Catective™ is a trademark of The Jacobs Theology Show. © 2025 The Jacobs Theology Show. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const soundFiles = [
+      "https://theologyteacherman.github.io/fullgamesite3/sounds/meow1.mp3",
+      "https://theologyteacherman.github.io/fullgamesite3/sounds/meow2.mp3",
+      "https://theologyteacherman.github.io/fullgamesite3/sounds/click1.mp3",
+      "https://theologyteacherman.github.io/fullgamesite3/sounds/bloop.mp3"
+    ];
+
+    const audioElements = soundFiles.map(path => {
+      const audio = new Audio(path);
+      audio.preload = "auto";
+      return audio;
+    });
+
+    function isPageLink(target) {
+      while (target && target !== document.body) {
+        if (target.tagName === "A" && target.href && !target.href.startsWith("#")) {
+          return true;
+        }
+        target = target.parentElement;
+      }
+      return false;
+    }
+
+    document.addEventListener("click", function (e) {
+      if (!isPageLink(e.target)) {
+        const randomIndex = Math.floor(Math.random() * audioElements.length);
+        const sound = audioElements[randomIndex];
+        if (sound) {
+          sound.currentTime = 0;
+          sound.play().catch(() => {});
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
